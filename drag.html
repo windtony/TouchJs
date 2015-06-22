@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>手势事件--drag</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="window-target" content="_top" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta content="telephone=no" name="format-detection" />
+		<meta name="renderer" content="webkit">
+		<meta name="msapplication-tap-highlight" content="no">
+		<link rel="stylesheet" href="css/template.css" />
+		<style>
+#main{min-width:320px}
+@media screen and (max-width:767px){#play{width:320px;height:300px;position:relative;margin:0 auto}
+#play #target{left:76px;top:60px}
+}
+@media screen and (min-width:768px){#play{width:768px;height:440px;position:relative;margin:0 auto}
+#play #target{left:312px;top:130px}
+}
+#play #target{position:absolute;cursor:pointer;width:166px;border:1px solid #ddd;-webkit-border-radius:100px;-webkit-box-shadow:2px 2px 5px #bbb;-webkit-transition:opacity .5s;-webkit-touch-callout:none;opacity:0}
+#playarea{height:100%}
+#play #target.show{opacity:1}
+
+		</style>
+	</head>
+
+	<body>
+		<div id="main">
+        <section id="play">
+            <div id="playarea"></div>
+        </section>
+    </div>
+
+		<script type="text/javascript" src="js/webtap.js"></script>
+		<script type="text/javascript" src="js/touch.min.js"></script>
+		<script type="text/javascript" src="js/drag.js"></script>
+	</body>
+
+</html>
